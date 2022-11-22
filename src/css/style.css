@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -55,21 +57,21 @@
      display: block;
      color: white;
      text-align: center;
-     padding: 14px 16px;
+     padding: 23px 16px;
      text-decoration: none;
-     font-size: 20px;
+     font-size: 22px;
+     font-family: 'Rubik Distressed', cursive;
  }
 
  /* Change the color of links on hover */
  .topnav a:hover {
-     background-color: rgba(255, 255, 255, 0.8);
-     color: black;
+     /* background-color: rgba(255, 255, 255, 0.8); */
+     color: rgba(255, 255, 255, 0.3)
  }
 
  /* Add an active class to highlight the current page */
  .topnav a.active {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
+    color: gold;
  }
 
  /* Hide the link that should open and close the topnav on small screens */
