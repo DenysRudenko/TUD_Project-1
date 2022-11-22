@@ -62,6 +62,10 @@
      font-size: 22px;
      font-family: 'Rubik Distressed', cursive;
  }
+ .topnav a.right {
+    float: right;
+    font-size: 30px;
+ }
 
  /* Change the color of links on hover */
  .topnav a:hover {
@@ -71,7 +75,7 @@
 
  /* Add an active class to highlight the current page */
  .topnav a.active {
-    color: gold;
+    color: rgba(255, 196, 0, 0.5);
  }
 
  /* Hide the link that should open and close the topnav on small screens */
