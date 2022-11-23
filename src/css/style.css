@@ -111,6 +111,15 @@
          float: right;
          display: block;
      }
+
+         .topnav h1.right {
+             display: none;
+         }
+    
+         .topnav h1.right_k {
+             display: none;
+    
+         }
  }
 
  @media screen and (max-width: 600px) {
@@ -133,16 +142,12 @@
 
  }
 
-section {
-    justify-content: center;
-}
 
  .medium_silent{
     position: relative;
     float: left;
     margin: 150px auto;
     opacity: 0.6;
-    width: 600px;
  }
 
  .medium_silent .logo_silent {
@@ -151,14 +156,14 @@ section {
  }
 
  .medium_silent .logo_silent img {
-    width: 600px;
+    width: 100%;
     height: 250px;
  }
-
 
  .medium_silent .medium_social {
     text-align: center;
  }
+
  .medium_silent .medium_social li {
     display: inline-block;
  }
@@ -169,9 +174,13 @@ section {
     padding-right: 20px;
  }
 
+ .medium_silent .medium_social li i:hover {
+    font-size: 38px;
+ }
+
 .medium_silent .medium_descr {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .medium_right {
