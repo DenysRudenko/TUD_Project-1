@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Distressed&display=swap');
 * {
     margin: 0;
     padding: 0;
     border: none;
+    color: white;
+    list-style-type: none;
 }
 
 /* Video */
@@ -49,6 +50,7 @@
      overflow: hidden;
      position: relative;
      z-index: 1;
+     width: 100%;
  }
 
  /* Style the links inside the navigation bar */
@@ -62,9 +64,25 @@
      font-size: 22px;
      font-family: 'Rubik Distressed', cursive;
  }
- .topnav a.right {
+ .topnav h1.right {
     float: right;
     font-size: 30px;
+    font-family: 'BhuTuka Expanded One', cursive;
+    color: white;
+    margin-top: 22px;
+    margin-right: 20px;
+ }
+ 
+ .topnav h1.right_k {
+     float: right;
+     font-size: 25px;
+     border: 1px solid grey;
+     padding: 10px 10px 10px 10px;
+     margin-top: 15px;
+     margin-right: 20px;
+    font-family: 'BhuTuka Expanded One', cursive;
+     color: white;
+
  }
 
  /* Change the color of links on hover */
@@ -111,4 +129,43 @@
          display: block;
          text-align: left;
      }
+
+
  }
+
+ .medium_silent{
+    position: relative;
+    /* background-color: rgba(199, 233, 6, 0.5); */
+    
+    float: left;
+    margin: 150px auto;
+ }
+
+ .medium_silent .logo_silent {
+    text-align: center;
+   
+ }
+
+ .medium_silent .logo_silent img {
+    width: 600px;
+    height: 250px;
+ }
+
+
+ .medium_silent .medium_social {
+    text-align: center;
+ }
+ .medium_silent .medium_social li {
+    display: inline-block;
+ }
+
+ .medium_silent .medium_social li i {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+.medium_silent .medium_descr {
+    text-align: center;
+    padding: 20px;
+}
