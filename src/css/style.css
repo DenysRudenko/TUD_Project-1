@@ -139,11 +139,10 @@ section {
 
  .medium_silent{
     position: relative;
-    /* background-color: rgba(199, 233, 6, 0.5); */
-    /* background-color: green; */
     float: left;
     margin: 150px auto;
     opacity: 0.6;
+    width: 600px;
  }
 
  .medium_silent .logo_silent {
@@ -178,8 +177,6 @@ section {
 .medium_right {
     position: relative;
     float: right;
-    /* width: 600px;
-    height: 600px; */
     margin: 200px 50px;
     opacity: 0.6;
 }
