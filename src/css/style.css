@@ -5,6 +5,11 @@
     border: none;
     color: white;
     list-style-type: none;
+
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* Video */
@@ -25,6 +30,7 @@
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+    z-index: 1;
 }
 
 /* Style the button used to pause/play the video */
@@ -59,10 +65,12 @@
      display: block;
      color: white;
      text-align: center;
-     padding: 23px 16px;
+     padding: 25px 16px;
      text-decoration: none;
-     font-size: 22px;
-     font-family: 'Rubik Distressed', cursive;
+     font-size: 25px;
+     font-weight: bolder;
+    font-family: 'BhuTuka Expanded One', cursive;
+     /* font-family: 'Rubik Distressed', cursive; */
  }
  .topnav h1.right {
     float: right;
@@ -87,8 +95,7 @@
 
  /* Change the color of links on hover */
  .topnav a:hover {
-     /* background-color: rgba(255, 255, 255, 0.8); */
-     color: rgba(255, 255, 255, 0.3)
+     color: rgba(255, 255, 255, 0.3);
  }
 
  /* Add an active class to highlight the current page */
@@ -147,12 +154,13 @@
     position: relative;
     float: left;
     margin: 150px auto;
-    opacity: 0.6;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* opacity: 0.6; */
  }
 
  .medium_silent .logo_silent {
     text-align: center;
-   
  }
 
  .medium_silent .logo_silent img {
@@ -176,6 +184,8 @@
 
  .medium_silent .medium_social li i:hover {
     font-size: 38px;
+    color: rgba(255, 255, 255, 0.3);
+    
  }
 
 .medium_silent .medium_descr {
@@ -187,11 +197,234 @@
     position: relative;
     float: right;
     margin: 200px 50px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
 .medium_right img {
     text-align: center;
     width: 600px;
     border-radius: 6%;
+}
+
+.fogwrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+
+#foglayer_01 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_01 .image01,
+#foglayer_01 .image02 {
+    background: url("../images/fog/fog1.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#foglayer_02 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+    -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_02 .image01,
+#foglayer_02 .image02 {
+    background: url("../images/fog/fog2.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#foglayer_03 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+    -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+    background: url("../images/fog/fog2.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+@keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@-webkit-keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+
+    22% {
+        opacity: .5;
+    }
+
+    40% {
+        opacity: .28;
+    }
+
+    58% {
+        opacity: .4;
+    }
+
+    80% {
+        opacity: .16;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@-webkit-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+
+    25% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8;
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@-webkit-keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8;
+    }
+
+    27% {
+        opacity: .2;
+    }
+
+    52% {
+        opacity: .6;
+    }
+
+    68% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@-webkit-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
 }
