@@ -33,7 +33,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    /* padding: 10px; */
     z-index: 1;
 }
 
@@ -53,6 +53,30 @@ body {
 
 .content .footer_social i:hover{
     color: rgba(255, 255, 255, 0.3);
+}
+
+.content .footer_social .footer_network {
+    padding-top: 20px;
+}
+
+.content .footer_social .footer_network a {
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.content .footer_social .footer_network a:hover {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.content .footer_social .footer_network {
+    padding-bottom: 20px;
+}
+
+.content .footer_social p {
+    font-size: 15px;
+    padding-bottom: 8px;
 }
 
 /* Style the button used to pause/play the video */
@@ -131,9 +155,6 @@ body {
      display: none;
  }
 
- 
-
-
  .medium_silent{
     position: relative;
     float: left;
@@ -175,6 +196,15 @@ body {
 .medium_silent .medium_descr {
     text-align: center;
     padding: 30px;
+}
+
+.medium_silent .medium_descr p {
+    font-size: 20px;
+}
+
+.medium_silent .medium_descr span {
+    color: red;
+    font-weight: bold;
 }
 
 .medium_right {
