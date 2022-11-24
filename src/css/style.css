@@ -214,22 +214,22 @@ body {
 .medium_right {
         position: relative;
         float: right;
-        /* padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 5px;
-        padding-bottom: 5px; */
-
         margin-top: 200px;
         margin-right: 100px;
         margin-bottom: 250px;
         margin-left: 100px;
+
 }
 
 .medium_right img {
     text-align: center;
     width: 600px;
     border-radius: 6%;
+    opacity: 0.7;
+    border: 1px solid gold;
 }
+
+
 
 .fogwrapper {
     width: 100%;
@@ -245,6 +245,83 @@ body {
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
+.order {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    float: right;
+    bottom: 40px;
+    left: 50px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.order a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+    border-radius: 7px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.order a:hover {
+    border: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0);
+    opacity: none;
+}
+
+/* store page */
+
+.store_middle .tshirts {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.store_middle .flex1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.store_middle .flex2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 170px;
+    text-align: center;
+}
+
+.store_middle .tshirts img {
+    width: 50%;
+    border: 1px solid gold;
+}
+
+.store_middle .tshirts p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.store_middle .tshirts a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+    border-radius: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.store_middle .tshirts a:hover {
+    border: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0);
+}
+
+
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
@@ -309,6 +386,17 @@ body {
         text-align: left;
     }
 
+    .store_middle .flex1 {
+        flex-direction: column;
+        float: left;
+        width: 50%;
+    }
+    
+    .store_middle .flex2 {
+        flex-direction: column;
+        float: right;
+        width: 50%;
+    }
    
 }
 
@@ -316,6 +404,20 @@ body {
 @media screen and (max-width: 775px) {
     .content .footer_social .footer_network a {
         padding: 5px;
+        font-size: 15px;
+    }
+
+    .store_middle .tshirts {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .store_middle .tshirts p{
+        font-size: 15px;
+    }
+
+    .store_middle .tshirts a {
         font-size: 15px;
     }
 }
