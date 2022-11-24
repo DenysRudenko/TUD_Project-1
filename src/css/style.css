@@ -37,6 +37,24 @@ body {
     z-index: 1;
 }
 
+.content .footer_social {
+    text-align: center;
+}
+
+.content .footer_social li {
+    display: inline-block;
+}
+
+.content .footer_social i {
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content .footer_social i:hover{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Style the button used to pause/play the video */
 #myBtn {
     width: 200px;
