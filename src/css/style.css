@@ -16,6 +16,14 @@ body {
     font-weight: bold;
 }
 
+.middle {
+    min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+}
+
 
 
 /* Video properties on the background */
@@ -129,6 +137,8 @@ body {
     margin-top: 22px;
     margin-right: 20px;
  }
+
+ 
  
  .topnav h1.right_k {
      float: right;
@@ -140,6 +150,10 @@ body {
     font-family: 'BhuTuka Expanded One', cursive;
      color: white;
 
+ }
+
+ .topnav h1.right_k:hover {
+    border: 1px solid goldenrod;
  }
 
  /* Change the color of links on hover */
@@ -221,6 +235,85 @@ body {
 
 }
 
+.store_middle {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.medium_right_store {
+    position: relative;
+    float: right;
+    margin-top: 200px;
+    margin-right: 100px;
+    margin-bottom: 250px;
+    margin-left: 100px;
+
+}
+
+.medium_left_store {
+    position: relative;
+    float: left;
+    margin-top: 200px;
+    margin-right: 100px;
+    margin-bottom: 250px;
+    margin-left: 100px;
+
+}
+
+.medium_left_store img {
+    text-align: center;
+    width: 600px;
+    border-radius: 6%;
+    opacity: 0.7;
+    border: 1px solid gold;
+}
+
+.medium_left_store img:hover {
+    border: 2px solid goldenrod;
+}
+
+.medium_right_store img {
+    text-align: center;
+    width: 600px;
+    border-radius: 6%;
+    opacity: 0.7;
+    border: 1px solid gold;
+}
+
+.medium_right_store img:hover {
+    border: 2px solid goldenrod;
+}
+
+.order_store {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    left: 240px;
+    bottom: 50px;
+
+}
+
+.order_store a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+    border-radius: 7px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.order_store a:hover {
+    border: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0);
+}
+
 .medium_right img {
     text-align: center;
     width: 600px;
@@ -229,7 +322,9 @@ body {
     border: 1px solid gold;
 }
 
-
+.medium_right img:hover {
+    border: 2px solid goldenrod;
+}
 
 .fogwrapper {
     width: 100%;
@@ -287,6 +382,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-top: 70px;
 }
 
 .store_middle .flex2 {
@@ -321,7 +417,15 @@ body {
     background-color: rgba(0, 0, 0);
 }
 
+/* about page */
 
+.about_middle {
+     min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
 
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
@@ -400,6 +504,14 @@ body {
    
 }
 
+
+@media screen and (max-width: 800px) {
+    .medium_right img { 
+            width: 400px;
+            margin: auto;
+                display: block;
+        }
+}
 
 @media screen and (max-width: 775px) {
     .content .footer_social .footer_network a {
