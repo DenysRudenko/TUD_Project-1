@@ -1,6 +1,5 @@
 /* Import font style from google fonts page */
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Distressed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Nerko+One&family=Rubik+Distressed&display=swap');
 /* Default properties for html page */
 * {
     margin: 0;
@@ -123,7 +122,7 @@ body {
      text-align: center;
      padding: 25px 16px;
      text-decoration: none;
-     font-size: 25px;
+     font-size: 20px;
      font-weight: bolder;
     font-family: 'BhuTuka Expanded One', cursive;
  }
@@ -559,13 +558,56 @@ body {
     text-align: left;
     float: left;
 
-    font-family: non;
+}
+
+.middle .left_info span {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.middle .right_info span {
+    color: goldenrod;
+        font-size: 25px;
+}
+
+.middle .right_info .welcome {
+    color: white;
+}
+
+.middle .left_info .konami {
+    color: red;
+    font-size: 20px;
+    font-style: normal;
 }
 
 .middle .right_info {
     background: rgba(0, 0, 0, 0.5);
+    border: 1px solid goldenrod;
+    width: 30%;
+
+    position: relative;
+
+    color: white;
+    line-height: 40px;
+
+    padding: 10px 10px 10px 10px;
+
+    float: right;
+    margin-top: 150px;
+    margin-right: 50px;
+    border-radius: 7px;
+    text-align: left;
+
+    font-size: 18px;
+}
+
+
+/* news page */
+.middle .news_info {
+    background: rgba(0, 0, 0, 0.5);
         border: 1px solid goldenrod;
-        width: 30%;
+        width: 85%;
+        height: 600px;
     
         position: relative;
     
@@ -573,16 +615,15 @@ body {
         line-height: 40px;
     
         padding: 10px 10px 10px 10px;
-
-        float: right;
-        margin-top: 150px;
-        margin-right: 50px;
+    
+        
         border-radius: 7px;
-        text-align: left;
+        justify-content: center;
 
+        margin: 120px auto;
+    
         font-family: non;
 }
-
 
 /* media querries for 1220px */
 @media screen and (max-width: 1220px) {
