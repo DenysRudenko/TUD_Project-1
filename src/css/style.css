@@ -1,3 +1,4 @@
+/* Import font style from google fonts page */
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Distressed&display=swap');
 
 /* Default properties for html page */
@@ -43,7 +44,6 @@ body {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    /* padding: 10px; */
     z-index: 1;
 }
 
@@ -126,7 +126,6 @@ body {
      font-size: 25px;
      font-weight: bolder;
     font-family: 'BhuTuka Expanded One', cursive;
-     /* font-family: 'Rubik Distressed', cursive; */
  }
 
  .topnav h1.right {
@@ -138,8 +137,6 @@ body {
     margin-right: 20px;
  }
 
- 
- 
  .topnav h1.right_k {
      float: right;
      font-size: 25px;
@@ -171,6 +168,7 @@ body {
      display: none;
  }
 
+ /* Medium properties for index html file */
  .medium_silent{
     position: relative;
     float: left;
@@ -178,8 +176,6 @@ body {
     margin-left: 100px;
     margin-right: 100px;
 
-    
-    /* opacity: 0.6; */
  }
 
  .medium_silent .logo_silent {
@@ -225,6 +221,7 @@ body {
     font-weight: bold;
 }
 
+/* properties for right image at the index html */
 .medium_right {
         position: relative;
         float: right;
@@ -232,9 +229,10 @@ body {
         margin-right: 100px;
         margin-bottom: 250px;
         margin-left: 100px;
-
 }
 
+
+/* properties for store page at medium section */
 .store_middle {
     min-width: 100%;
     min-height: 100%;
@@ -242,8 +240,6 @@ body {
     right: 0;
     bottom: 0;
 }
-
-
 
 .medium_right_store {
     position: relative;
@@ -326,6 +322,7 @@ body {
     border: 2px solid goldenrod;
 }
 
+/* This class is representive for background image on all pages around the web-site */
 .fogwrapper {
     width: 100%;
     height: 100%;
@@ -335,11 +332,25 @@ body {
     object-fit: cover;
     object-position: bottom;
    
-
+    /* animation for images background */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
+
+
+/* creates the level of zoom for background images */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Represents for Buy button on the website  */
 .order {
     position: absolute;
     width: 120px;
@@ -368,8 +379,7 @@ body {
     opacity: none;
 }
 
-/* store page */
-
+/* Represents for tshirts to buy some clothes */
 .store_middle .tshirts {
     position: relative;
     margin-top: 30px;
@@ -402,6 +412,7 @@ body {
     padding-top: 20px;
     font-weight: bold;
 }
+
 .store_middle .tshirts a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -417,7 +428,7 @@ body {
     background-color: rgba(0, 0, 0);
 }
 
-/* about page */
+/* Represent for about us page */
 
 .about_middle {
      min-width: 100%;
@@ -427,20 +438,8 @@ body {
     bottom: 0;
 }
 
-/* creates the level of zoom for hero image */
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
 
-    to {
-        transform: scale(1.1);
-    }
-}
-
-
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* media querries for 1220px */
 @media screen and (max-width: 1220px) {
     .topnav a {
             font-size: 20px;
@@ -455,6 +454,8 @@ body {
     }
 }
 
+
+/* media quesrries for 1000px */
 @media screen and (max-width: 1000px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -504,7 +505,7 @@ body {
    
 }
 
-
+/* Represent for media querries for 800px */
 @media screen and (max-width: 800px) {
     .medium_right img { 
             width: 400px;
@@ -513,6 +514,7 @@ body {
         }
 }
 
+/* Represent for media quesrries for 775px */
 @media screen and (max-width: 775px) {
     .content .footer_social .footer_network a {
         padding: 5px;
