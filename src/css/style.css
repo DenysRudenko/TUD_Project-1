@@ -757,7 +757,7 @@ body {
 
 .contact-form_log {
     width: 40%;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 20px 10px 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid goldenrod;
     border-radius: 7px;
@@ -767,10 +767,11 @@ body {
 .contact-heading_log h2 {
     text-align: center;
     margin-right: 30px;
+    padding-top: 20px;
 }
 
 .contact-details_log {
-    width: 94%;
+   padding-right: 15px;
 }
 
 .middle_form_log label {
@@ -786,7 +787,7 @@ body {
 }
 
 .contact-details_log .label_inp input {
-    width: 100%;
+    width: 98%;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -837,6 +838,7 @@ body {
     }
 }
 
+
 @media screen and (max-width: 1125px){
     .topnav .right, .topnav .right_k {
         font-size: 18px;
@@ -851,6 +853,11 @@ body {
 @media screen and (max-width: 1029px) {
     .topnav a:not(:first-child) {
         display: none;
+    }
+
+    .middle .middle_form_log {
+        position: relative;
+        margin-top: 100px;
     }
 
     .topnav a.icon {
@@ -940,17 +947,27 @@ body {
     left: 50px;
     top: 40px;
     position: relative;
-    /* background-color: yellow; */
+
     padding: 10px 0px 20px 20px;
-        background: rgba(0, 0, 0, 0.5);
-            border: 1px solid goldenrod;
-            border-radius: 7px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid goldenrod;
+    border-radius: 7px;
 }
 
 .contact-form:hover {
     border: 1px solid gold;
 }
 
+@media screen and (max-width: 1001px) {
+
+    .contact-heading_log h2 {
+        font-size: 22px;
+    }
+
+    .middle_form_log label {
+        font-size: 18px;
+    }
+}
 
 /* Represent for media querries for 800px */
 @media screen and (max-width: 800px) {
@@ -981,4 +998,28 @@ body {
     .store_middle .tshirts a {
         font-size: 15px;
     }
+
+    .contact-heading_log h2 {
+        font-size: 20px;
+    }
+
+    .middle_form_log label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 691px){
+    .contact-heading_log h2 {
+            font-size: 18px;
+        }
+    
+        .middle_form_log label {
+            font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 280px) {
+    .contact-form_log {
+            width: 50%;
+        }
 }
