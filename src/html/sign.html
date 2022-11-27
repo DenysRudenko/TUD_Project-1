@@ -27,7 +27,7 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a class="right active" href="sign.html">Sign in</a>
+                <a class="right active" href="sign.html">Sign up</a>
                 <a class="right_k" href="login.html">Log in</a>
             </div>
         </nav>
@@ -36,35 +36,43 @@
     <section class="middle">
         <img class="fogwrapper" src="../images/sign.jpg">
 
-        <div class="middle_form">
+        <div class="middle_form_log">
         
-            <form method="POST" action="https://www.tudublin.ie/" class="contact-form" target="_blank">
+            <form method="POST" action="https://www.tudublin.ie/" class="contact-form_log" target="_blank">
                 <!--title for the form-->
-                <div class="contact-heading">
+                <div class="contact-heading_log">
                     <h2>Sign Up</h2>
                 </div>
         
                 <!--code for contact details and icons-->
-                <div class="contact-details">
+                <div class="contact-details_log">
 
+                   <div class="label_inp">
                     <label class="contact-text" for="email">Your Email (required)</label>
-                    <input type="email" id="email" name="email-address" class="contact-text"
-                        placeholder="Type your email address here" required>
-
-                    <label class="contact-text" for="username">Enter Your Username (required)</label>
-                    <input type="text" id="username" name="username" class="contact-text" placeholder="Type your email address here"
+                    <input type="email" id="email" name="email-address" class="contact-text" placeholder="Type your email address here"
                         required>
+
+                   </div>
+
+                    <div class="label_inp">
+                        <label class="contact-text" for="username">Enter Your Username (required)</label>
+                        <input type="text" id="username" name="username" class="contact-text" placeholder="Type your email address here"
+                            required>
+                    </div>
         
-                    <label class="contact-text" for="password">Password (required)</label>
-                    <input id="password" name="password" class="contact-text" placeholder=" Type your password"
-                        type="password" required>
+                    <div class="label_inp">
+                        <label class="contact-text" for="password">Password (required)</label>
+                        <input id="password" name="password" class="contact-text" placeholder=" Type your password" type="password" required>
+                    </div>
                     
+                    <input type="submit" class="button_log" value="Submit">
+
                 </div>
         
-                <!-- div for a textarea  -->
+                
         
                 
-                <input type="submit" class="button" value="Submit">
+                
             </form>
 
     </section>
