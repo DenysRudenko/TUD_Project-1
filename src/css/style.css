@@ -129,6 +129,14 @@ body {
 
  .topnav .right {
     float: right;
+    border: 1px solid grey;
+    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+ }
+
+ .topnav .right:hover {
+     border: 1px solid goldenrod;
  }
 
  .topnav .right_k {
@@ -496,6 +504,10 @@ body {
         border-radius: 7px;
 }
 
+.map-details:hover {
+    border: 1px solid gold;
+}
+
 .map_heading {
     padding-top: 20px;
 }
@@ -573,7 +585,10 @@ body {
     border-radius: 7px;
     text-align: left;
     float: left;
+}
 
+.middle .left_info:hover {
+    border: 1px solid gold;
 }
 
 .middle .left_info span {
@@ -617,6 +632,10 @@ body {
     font-size: 18px;
 }
 
+.middle .right_info:hover {
+    border: 1px solid gold;
+}
+
 
 /* news page */
 .middle .news_info {
@@ -639,6 +658,10 @@ body {
         margin: 120px auto;
     
         font-family: none;
+}
+
+.middle .news_info:hover {
+    border: 1px solid gold;
 }
 
 .middle .news_info h1 {
@@ -676,21 +699,23 @@ body {
 
 .middle .characters {
     width: 1600px;
-    /* background-color: yellow; */
-    height: 650px;
     position: relative;
     margin: 200px auto;
     display: flex;
-    background-color:;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+}
+
+.middle .characters:hover {
+    border: 1px solid gold;
 }
 
 .middle .characters .char_1 {
-    /* background-color: blue; */
     width: 500px;
     height: 400px;
     margin: 50px 20px 20px 20px;
 }
-
 
 .middle .characters .char_1 img {
     border-radius: 50%;
@@ -701,7 +726,7 @@ body {
     margin-right: auto;
     width: 50%;
     padding-bottom: 10px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .middle .characters .char_1 h3 {
     text-align: center;
@@ -716,6 +741,79 @@ body {
     font-family: 'BhuTuka Expanded One', cursive;
 }
 
+
+/* Log in page */
+
+.middle .middle_form_log {
+    position: relative;
+    margin-top: 200px;
+}
+
+.middle_form_log {
+    height: 400px;
+    width: 100%;
+}
+
+
+.contact-form_log {
+    width: 40%;
+    padding: 10px 0px 0px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.contact-heading_log h2 {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.contact-details_log {
+    width: 94%;
+}
+
+.middle_form_log label {
+    color: rgb(187, 161, 79);
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-text_log{
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+.contact-details_log .label_inp input {
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-details_log .label_inp input:hover {
+    border: 1px solid gold;
+}
+
+.button_log {
+    margin: 20px auto;
+    border-radius: 2px;
+    padding: 15px 40px 15px 40px;
+    display: block;
+    font-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+    font-weight: bold;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.button_log:hover {
+    border: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0);
+    opacity: none;
+}
 
 /* media querries for 1220px */
 @media screen and (max-width: 1220px) {
@@ -846,6 +944,10 @@ body {
         background: rgba(0, 0, 0, 0.5);
             border: 1px solid goldenrod;
             border-radius: 7px;
+}
+
+.contact-form:hover {
+    border: 1px solid gold;
 }
 
 

@@ -27,7 +27,7 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a class="right" href="sign.html">Sign in</a>
+                <a class="right" href="sign.html">Sign up</a>
                 <a class="right_k active" href="login.html">Log in</a>
             </div>
         </nav>
@@ -36,29 +36,32 @@
     <section class="middle">
         <img class="fogwrapper" src="../images/log.jpg">
 
-        <div class="middle_form">
+        <div class="middle_form_log">
         
-            <form method="POST" action="https://www.tudublin.ie/" class="contact-form" target="_blank">
+            <form method="POST" action="https://www.tudublin.ie/" class="contact-form_log" target="_blank">
                 <!--title for the form-->
-                <div class="contact-heading">
+                <div class="contact-heading_log">
                     <h2>Log in</h2>
                 </div>
         
                 <!--code for contact details and icons-->
-                <div class="contact-details">
+                <div class="contact-details_log">
         
-                    <label class="contact-text" for="username">Enter Your Username (required)</label>
-                    <input type="text" id="username" name="username" class="contact-text"
-                        placeholder="Type your email address here" required>
+                    <div class="label_inp">
+                        <label class="contact-text_log" for="username">Enter Your Username (required)</label>
+                        <input type="text" id="username" name="username" class="contact-text" placeholder="Type your email address here"
+                            required>
+                    </div>
         
+                   <div class="label_inp">
                     <label class="contact-text" for="password">Password (required)</label>
-                    <input id="password" name="password" class="contact-text" placeholder=" Type your password" type="password"
-                        required>
-        
+                    <input id="password" name="password" class="contact-text" placeholder=" Type your password" type="password" required>
+                   </div>
+                    
+                    <input type="submit" class="button_log" value="Submit">
                 </div>
 
-                <input type="submit" class="button" value="Submit">
-
+                
             </form>
 
     </section>
