@@ -396,6 +396,7 @@ body {
 .store_middle .tshirts img {
     width: 50%;
     border: 1px solid gold;
+    border-radius: 7px;
 }
 
 .store_middle .tshirts p {
@@ -489,6 +490,10 @@ body {
     top: 40px;
     position: relative;
     padding-left: 5px;
+    padding: 10px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.5);
+        border: 1px solid goldenrod;
+        border-radius: 7px;
 }
 
 .map_heading {
@@ -528,7 +533,7 @@ body {
 
 .map-details h3 {
     color: rgb(187, 161, 79);
-    padding-top: 20px;
+    padding-top: 11px;
     padding-bottom: 10px;
 }
 
@@ -676,6 +681,7 @@ body {
     position: relative;
     margin: 200px auto;
     display: flex;
+    background-color:;
 }
 
 .middle .characters .char_1 {
@@ -776,6 +782,72 @@ body {
     }
    
 }
+
+.middle .video_story {
+    /* width: 1800px; */
+    /* height: 600px; */
+    position: relative;
+    margin: 150px auto;
+    background-color: blue;
+}
+
+.middle .video_story .first {
+    width: 620px;
+    height: 500px;
+    border-radius: 9px;
+    padding-left: 20px;
+    float: left;
+
+}
+
+.middle .video_story .second {
+    width: 620px;
+    height: 500px;
+    border-radius: 9px;
+    padding-right: 20px;
+    float: right;
+
+}
+
+.middle .center_text {
+    position: relative;
+    margin: 100px auto;
+    width: 10%;
+}
+
+.middle .center_text h1 {
+    text-align: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid gold;
+    border-radius: 7px;
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.middle .center_text h1:hover {
+    border: 1px solid goldenrod;
+        background-color: rgba(0, 0, 0);
+        opacity: none;
+}
+
+/* sign up page */
+
+.contact-form {
+    float: left;
+    width: 40%;
+    left: 50px;
+    top: 40px;
+    position: relative;
+    /* background-color: yellow; */
+    padding: 10px 0px 20px 20px;
+        background: rgba(0, 0, 0, 0.5);
+            border: 1px solid goldenrod;
+            border-radius: 7px;
+}
+
 
 /* Represent for media querries for 800px */
 @media screen and (max-width: 800px) {
