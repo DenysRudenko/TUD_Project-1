@@ -815,24 +815,40 @@ body {
     opacity: none;
 }
 
-/* media querries for 1220px */
-@media screen and (max-width: 1220px) {
+/* media querries for 1320px */
+@media screen and (max-width: 1320px) {
     .topnav a {
             font-size: 20px;
+            padding-left: 2px;
         }
 
-    .topnav h1.right {
+    .topnav .right {
             font-size: 20px;
         }
     
-    .topnav h1.right_k {
+    .topnav .right_k {
         font-size: 20px;
     }
 }
 
+@media screen and (max-width: 1205px){
+    .topnav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .topnav .right, .topnav .right_k {
+        font-size: 18px;
+    }
+
+    .topnav a {
+        font-size: 16px;
+    }
+}
 
 /* media quesrries for 1000px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1029px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -885,8 +901,9 @@ body {
     /* width: 1800px; */
     /* height: 600px; */
     position: relative;
-    margin: 150px auto;
-    background-color: blue;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .middle .video_story .first {
@@ -894,16 +911,6 @@ body {
     height: 500px;
     border-radius: 9px;
     padding-left: 20px;
-    float: left;
-
-}
-
-.middle .video_story .second {
-    width: 620px;
-    height: 500px;
-    border-radius: 9px;
-    padding-right: 20px;
-    float: right;
 
 }
 
@@ -923,12 +930,6 @@ body {
     text-decoration: none;
     line-height: 25px;
     padding: 5px;
-}
-
-.middle .center_text h1:hover {
-    border: 1px solid goldenrod;
-        background-color: rgba(0, 0, 0);
-        opacity: none;
 }
 
 /* sign up page */
