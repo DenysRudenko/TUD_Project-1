@@ -342,6 +342,22 @@ body {
     animation-fill-mode: forwards;
 }
 
+.fogwrapper_contact {
+    width: 100%;
+    height: 112%;
+    position: absolute;
+    top: 0;
+
+
+    /* object-position: 0%; */
+    object-fit: cover;
+    object-position: bottom;
+
+    /* animation for images background */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
 
 
 /* creates the level of zoom for background images */
@@ -461,7 +477,7 @@ body {
 }
 
 .middle_form {
-    height: 400px;
+    height: 750px;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 200px;
@@ -470,13 +486,25 @@ body {
 .contact-form {
     float: left;
     width: 40%;
-    left: 50px;
+    left: 20px;
     top: 40px;
     position: relative;
+    border: 1px solid goldenrod;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+    margin-right: 20px;
 }
+
+.contact-form:hover {
+    border: 1px solid gold;
+}
+
+
 
 .contact-details {
     width: 80%;
+    margin-left: 0px;
 }
 
 .contact-text, .contact-message textarea{
@@ -855,6 +883,32 @@ body {
         height: 550px;
         top: 50px;
     }
+
+    .middle .middle_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 625px;
+    }
+
+    .map-details {  
+        display: block;
+        margin: 50px auto;
+        left: 18px;
+    }
+
+    .fogwrapper{
+        height: 190%;
+    }
+
+    .fogwrapper_contact{
+        height: 185%;
+    }
 }
 
 @media screen and (max-width: 1205px){
@@ -1056,16 +1110,14 @@ body {
         /* sign up page */
     
         .contact-form {
-            float: left;
-            width: 40%;
-            left: 50px;
-            top: 40px;
-            position: relative;
-    
-            padding: 10px 0px 20px 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid goldenrod;
-            border-radius: 7px;
+            width: 60%;
+        }
+
+        .map-details{
+            width: 59%;
+        }
+        .map-details iframe{
+            width: 100%;
         }
     
         .contact-form:hover {
@@ -1092,6 +1144,10 @@ body {
     .middle .news_info {
         height: 650px;
     }
+
+    .fogwrapper_contact {
+        height: 195%;
+    }
 }
 
 /* Represent for media querries for 800px */
@@ -1104,6 +1160,10 @@ body {
 
         .order a {
             font-size: 16px;
+        }
+
+        .fogwrapper_contact {
+            height: 205%;
         }
 }
 
@@ -1128,8 +1188,36 @@ body {
         font-size: 15px;
     }
 
+    .fogwrapper_contact {
+        height: 200%;
+    }
+
     .contact-heading_log h2 {
         font-size: 20px;
+    }
+
+    .contact-heading {
+        font-size: 15px;
+    }
+
+    .contact-details label {
+        font-size: 14px;
+    }
+
+    .contact-message p {
+        font-size: 14px;
+    }
+
+    .map-details h2 {
+        font-size: 20px;
+    }
+
+    .map_heading h3 {
+        font-size: 16px;
+    }
+
+    .map_heading p {
+        font-size: 14px;
     }
 
     .middle_form_log label {
@@ -1140,9 +1228,7 @@ body {
         height: 800px;
     }
 
-    .fogwrapper {
-        height: 120%;
-    }
+
 }
 
 @media screen and (max-width: 691px){
