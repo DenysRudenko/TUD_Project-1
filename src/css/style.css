@@ -236,11 +236,12 @@ body {
 
 /* properties for store page at medium section */
 .store_middle {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     position: fixed;
     right: 0;
     bottom: 0;
+    overflow: scroll;
 }
 
 .medium_right_store {
@@ -1064,6 +1065,7 @@ body {
         flex-direction: column;
         float: right;
         width: 50%;
+        margin-top: 70px;
     }
    
     .middle .characters {
