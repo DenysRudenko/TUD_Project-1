@@ -702,6 +702,8 @@ body {
     position: relative;
     margin: 200px auto;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid goldenrod;
     border-radius: 7px;
@@ -714,7 +716,7 @@ body {
 .middle .characters .char_1 {
     width: 500px;
     height: 400px;
-    margin: 50px 20px 20px 20px;
+    padding: 50px 20px 20px 20px;
 }
 
 .middle .characters .char_1 img {
@@ -838,6 +840,29 @@ body {
     }
 }
 
+@media screen and (max-width: 1200px) {
+
+    .medium_silent {
+        position: relative;
+        text-align: center;
+        float: none;
+    }
+
+    .medium_right {
+        position: relative;
+        float: none;
+        text-align: center;
+        margin-left: 100px;
+            margin-right: 100px;
+    }
+
+    .order {
+        margin: 0px 300px 0px 200px;
+
+    }
+
+}
+
 
 @media screen and (max-width: 1125px){
     .topnav .right, .topnav .right_k {
@@ -864,6 +889,25 @@ body {
         float: right;
         display: block;
     }
+
+    .topnav .right {
+        border: none; 
+        padding: 2px;
+    }
+
+    .topnav .right:hover{
+        border: none;
+    }
+
+    .topnav .right_k {
+        border: none;
+        padding: 2px;
+    }
+
+    .topnav .right_k:hover{
+        border: none;
+    }
+
 
     .topnav h1.right {
         display: none;
@@ -902,6 +946,11 @@ body {
         width: 50%;
     }
    
+    .middle .characters {
+        flex-direction: column;
+            float: left;
+            width: 50%;
+    }
 }
 
 .middle .video_story {
@@ -958,7 +1007,10 @@ body {
     border: 1px solid gold;
 }
 
+
+
 @media screen and (max-width: 1001px) {
+
 
     .contact-heading_log h2 {
         font-size: 22px;
@@ -975,6 +1027,10 @@ body {
             width: 400px;
             margin: auto;
                 display: block;
+        }
+
+        .order a {
+            font-size: 16px;
         }
 }
 
@@ -1016,6 +1072,35 @@ body {
         .middle_form_log label {
             font-size: 14px;
         }
+}
+
+@media screen and (max-width: 580px){
+    .medium_silent .medium_social li i {
+        font-size: 25px;
+    }
+
+    .medium_silent .medium_descr p {
+        font-size: 15px;
+    }
+
+    .medium_right {
+        position: relative;
+        float: none;
+        text-align: center;
+        margin: 170px auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+        
+    .medium_right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .order {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 300px) {
