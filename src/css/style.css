@@ -343,6 +343,23 @@ body {
     animation-fill-mode: forwards;
 }
 
+.fogwrapper_about {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: 0;
+
+
+    /* object-position: 0%; */
+    object-fit: cover;
+    object-position: bottom;
+
+    /* animation for images background */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
 .fogwrapper_contact {
     width: 100%;
     height: 112%;
@@ -912,7 +929,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1205px){
+@media screen and (max-width: 1225px){
     .topnav a {
         font-size: 18px;
     }
@@ -933,6 +950,10 @@ body {
 
         .middle .news_info_right h2 {
             font-size: 20px;
+        }
+
+        .fogwrapper_about {
+            height: 140%;
         }
 
 }
@@ -993,6 +1014,10 @@ body {
     .middle .news_info .news_info_right li {
         font-size: 14px;
     }
+
+        .fogwrapper_about {
+            height: 150%;
+        }
 }
 
 /* media quesrries for 1000px */
@@ -1111,6 +1136,10 @@ body {
     
         /* sign up page */
     
+        .fogwrapper_about {
+            height: 160%;
+        }
+
         .contact-form {
             width: 60%;
         }
@@ -1148,8 +1177,29 @@ body {
     }
 
     .fogwrapper_contact {
-        height: 195%;
+        height: 205%;
     }
+
+    .middle .left_info span {
+        font-size: 15px;
+    }
+
+    .middle .left_info i {
+        font-size: 13px;
+    }
+
+    .middle .left_info i .konami {
+        font-size: 15px;
+    }
+
+    .middle .right_info span {
+        font-size: 15px;
+    }
+
+    .middle .right_info i {
+        font-size: 13px;
+    }
+
 }
 
 /* Represent for media querries for 800px */
@@ -1249,6 +1299,10 @@ body {
         .fogwrapper {
             height: 130%;
         }
+
+        .fogwrapper_about {
+            height: 190%;
+        }
 }
 
 @media screen and (max-width: 580px){
@@ -1268,7 +1322,11 @@ body {
         margin-left: 200px;
         margin-right: 200px;
     }
-        
+     
+         .fogwrapper_about {
+             height: 210%;
+         }
+
     .medium_right img {
         width: 100%;
     }
@@ -1294,6 +1352,10 @@ body {
         .fogwrapper {
             height: 155%;
         }
+
+        .fogwrapper_about {
+            height: 230%;
+        }
 }
 
 @media screen and (max-width: 485px) {
@@ -1307,6 +1369,10 @@ body {
 
     .fogwrapper {
         height: 185%;
+    }
+
+    .fogwrapper_about {
+        height: 260%;
     }
 }
 
