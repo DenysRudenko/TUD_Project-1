@@ -105,10 +105,10 @@ body {
 
 /* Navigation panel */
  .topnav {
-     background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(0, 0, 0, 0.7);
      overflow: hidden;
      position: relative;
-     z-index: 1;
+     z-index: 2;
      width: 100%;
  }
 
@@ -955,7 +955,7 @@ body {
     }
 
     .fogwrapper_order {
-        height: 160%;
+        height: 190%;
     }
 
     .medium_right_store {
@@ -1013,7 +1013,7 @@ body {
     }
 
     .fogwrapper_contact{
-        height: 185%;
+        height: 270%;
     }
 }
 
@@ -1063,7 +1063,7 @@ body {
 @media screen and (max-width: 1200px) {
 
     .fogwrapper_video{
-        height: 190%;
+        height: 240%;
     }
 
     .medium_silent {
@@ -1136,7 +1136,7 @@ body {
     }
 
     .fogwrapper_char {
-        height: 200%;
+        height: 290%;
     }
 }
 
@@ -1156,9 +1156,12 @@ body {
         display: block;
     }
 
+
+
     .topnav .right {
         border: none; 
-        padding: 2px;
+        padding: 25px 16px;
+           
     }
 
     .topnav .right:hover{
@@ -1167,7 +1170,8 @@ body {
 
     .topnav .right_k {
         border: none;
-        padding: 2px;
+        padding: 25px 16px;
+           
     }
 
     .topnav .right_k:hover{
@@ -1197,7 +1201,12 @@ body {
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.7);
+    }
+
+    .topnav.responsive a:hover {
+        background:rgba(255, 196, 0, 0.3);
     }
 
     .store_middle .flex1 {
@@ -1216,7 +1225,7 @@ body {
 /* sign up page */
     
     .fogwrapper_about {
-        height: 160%;
+        height: 220%;
     }
 
     .contact-form {
@@ -1239,6 +1248,12 @@ body {
     }
 }
 
+
+@media screen and (max-width: 1024px){
+    .topnav{
+        height: 50%;
+    }
+}
 
 @media screen and (max-width: 1001px) {
     .contact-heading_log h2 {
